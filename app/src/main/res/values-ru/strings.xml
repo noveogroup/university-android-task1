@@ -5,5 +5,8 @@
 	<string name="birthdate_label">Дата рождения</string>
 	<string name="send_button_text">Отправить</string>
 	<string name="surname_label">Фамилия</string>
+	<string name="name_text">Имя: %1$s</string>
+	<string name="surname_text">Фамилия: %1$s</string>
+	<string name="birthdate_text">Дата рождения: %1$s</string>
 
 </resources>

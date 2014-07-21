@@ -2,9 +2,14 @@
 <resources>
 
 	<string name="app_name">Task 1</string>
-	<string name="title_activity_read">reader</string>
+	<string name="title_activity_read">Reader</string>
 	<string name="name_label">First Name</string>
 	<string name="surname_label">Last Name</string>
 	<string name="birthdate_label">Birth date</string>
 	<string name="send_button_text">Send</string>
+	<string name="title_activity_show">Info</string>
+	<string name="name_text">First Name: %1$s</string>
+	<string name="surname_text">Last Name: %1$s</string>
+	<string name="birthdate_text">Birth Date: %1$s</string>
+
 </resources>
