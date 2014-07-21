@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Task 1</string>
+
+	<string name="app_name">Task 1</string>
+	<string name="title_activity_read">reader</string>
+	<string name="name_label">First Name</string>
+	<string name="surname_label">Last Name</string>
+	<string name="birthdate_label">Birth date</string>
+	<string name="send_button_text">Send</string>
 </resources>
