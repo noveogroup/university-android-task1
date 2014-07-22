@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".InputActivity"
+            android:name=".activity.MainActivity"
             android:label="Task1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -14,10 +14,15 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".OutputActivity"
-            android:label="Task1">
-        </activity>
+        <!--<activity-->
+            <!--android:name=".activity.InputActivity"-->
+            <!--android:label="Task1">-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name=".activity.OutputActivity"-->
+            <!--android:label="Task1">-->
+        <!--</activity>-->
 
     </application>
 

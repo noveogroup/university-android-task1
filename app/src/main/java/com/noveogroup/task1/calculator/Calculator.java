@@ -1,4 +1,4 @@
-package com.noveogroup.task1;
+package com.noveogroup.task1.calculator;
 
 import android.widget.DatePicker;
 

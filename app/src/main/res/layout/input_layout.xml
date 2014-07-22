@@ -50,11 +50,12 @@
         android:calendarViewShown="false"/>
 
     <Button
+        android:id="@+id/send_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/send"
         android:layout_gravity="center_horizontal"
-        android:onClick="sendInformation"
-        android:textSize="@dimen/textsize"/>
+        android:textSize="@dimen/textsize"
+        android:onClick="onSendClick"/>
 
 </LinearLayout>

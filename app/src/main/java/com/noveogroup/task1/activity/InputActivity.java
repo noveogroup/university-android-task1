@@ -1,4 +1,4 @@
-package com.noveogroup.task1;
+package com.noveogroup.task1.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+
+import com.noveogroup.task1.calculator.Calculator;
+import com.noveogroup.task1.R;
 
 public class InputActivity extends Activity{
     public final static String EXTRA_NAME = "com.noveogroup.task1.NMA";
@@ -18,7 +21,7 @@ public class InputActivity extends Activity{
         setContentView(R.layout.input_layout);
     }
 
-    public void sendInformation(View view) {
+    public void onSendClick(View view) {
         Intent intent = new Intent(this, OutputActivity.class);
         EditText name = (EditText)findViewById(R.id.enter_name);
         EditText surname = (EditText)findViewById(R.id.enter_surname);
