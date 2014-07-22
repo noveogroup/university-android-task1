@@ -6,7 +6,16 @@
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ActivityInput"
+            android:name=".InputActivity"
+            android:label="Task1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".OutputActivity"
             android:label="Task1">
         </activity>
 
