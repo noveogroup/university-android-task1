@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
@@ -19,9 +20,16 @@ public class InputActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.input_layout);
+        Button sendButton = (Button)findViewById(R.id.send_button);
+        sendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onSend();
+            }
+        });
     }
 
-    public void onSendClick(View view) {
+    public void onSend() {
         Intent intent = new Intent(this, OutputActivity.class);
         EditText name = (EditText)findViewById(R.id.enter_name);
         EditText surname = (EditText)findViewById(R.id.enter_surname);

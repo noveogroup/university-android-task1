@@ -3,7 +3,6 @@ package com.noveogroup.task1.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.noveogroup.task1.R;
@@ -23,10 +22,5 @@ public class OutputActivity extends Activity {
         showInformation.setText(getString(R.string.name) + "\n" + name + "\n"
                                 + getString(R.string.surname) + "\n" + surname + "\n"
                                 + getString(R.string.age) + "\n" + age + "\n");
-    }
-
-    public void onSendAgainClick(View view) {
-        Intent intent = new Intent(view.getContext(), InputActivity.class);
-        startActivity(intent);
     }
 }
