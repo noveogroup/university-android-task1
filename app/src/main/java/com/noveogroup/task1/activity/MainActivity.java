@@ -29,9 +29,11 @@ public class MainActivity extends Activity implements InputFragment.OnSendListen
     public void onSend(String name, String surname, String age) {
         Fragment outputFragment = new OutputFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("information", getString(R.string.name) + "\n" + name + "\n"
-                                        + getString(R.string.surname) + "\n" + surname + "\n"
-                                        + getString(R.string.age) + "\n" + age + "\n");
+        bundle.putString(OutputFragment.INFORMATION,
+                         String.format("%s\n%s\n%s\n%s\n%s\n%s\n",
+                                       getString(R.string.name), name,
+                                       getString(R.string.surname), surname,
+                                       getString(R.string.age), age));
         outputFragment.setArguments(bundle);
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.main_layout, outputFragment);

@@ -13,8 +13,10 @@ import android.widget.EditText;
 import com.noveogroup.task1.R;
 import com.noveogroup.task1.calculator.Calculator;
 
+import java.util.Date;
+
 public class InputFragment extends Fragment {
-    protected OnSendListener onSendListener;
+    private OnSendListener onSendListener;
 
     public interface OnSendListener {
         void onSend(String name, String surname, String age);
@@ -24,12 +26,11 @@ public class InputFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
-        try {
-            onSendListener = (OnSendListener)activity;
-        } catch (ClassCastException exception) {
+        if(!(activity instanceof OnSendListener)) {
             throw new ClassCastException(activity.toString()
                     + " must implement OnSendListener.");
         }
+        onSendListener = (OnSendListener) activity;
     }
 
     @Override
@@ -40,20 +41,20 @@ public class InputFragment extends Fragment {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendInformation();
+                String name = ((EditText)getActivity()
+                               .findViewById(R.id.enter_name)).getText().toString();
+                String surname = ((EditText)getActivity()
+                                  .findViewById(R.id.enter_surname)).getText().toString();
+                DatePicker datePicker = (DatePicker)getActivity().findViewById(R.id.date_picker);
+                String age = Integer.toString(Calculator.calculateAge(
+                        datePicker.getYear(), datePicker.getMonth(),
+                        datePicker.getDayOfMonth()));
+
+                onSendListener.onSend(name, surname, age);
             }
         });
+        ((DatePicker) view.findViewById(R.id.date_picker)).setMaxDate(new Date().getTime());
         return view;
     }
-
-    public void sendInformation() {
-        String name = ((EditText)getActivity().findViewById(R.id.enter_name)).getText().toString();
-        String surname = ((EditText)getActivity().findViewById(R.id.enter_surname)).getText().toString();
-        DatePicker datePicker = (DatePicker)getActivity().findViewById(R.id.date_picker);
-        String age = Integer.toString(Calculator.calculateAge(datePicker));
-
-        onSendListener.onSend(name, surname, age);
-    }
-
 }
 
