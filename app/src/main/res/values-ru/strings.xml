@@ -7,6 +7,7 @@
 	<string name="surname_label">Фамилия</string>
 	<string name="name_text">Имя: %1$s</string>
 	<string name="surname_text">Фамилия: %1$s</string>
-	<string name="birthdate_text">Дата рождения: %1$s</string>
+	<string name="age_text">Возраст: %1$d</string>
+	<string name="not_born">Ещё не рождён</string>
 
 </resources>

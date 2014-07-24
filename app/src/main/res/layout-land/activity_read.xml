@@ -45,13 +45,14 @@
 		android:id="@+id/birthdate_input"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:endYear="2014"
-		android:calendarViewShown="false" />
+		android:calendarViewShown="false"
+		android:focusableInTouchMode="true"/>
 
 	<Button
 		android:id="@+id/send_button"
 		android:text="@string/send_button_text"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content" />
+		android:layout_height="wrap_content"
+		android:enabled="true"/>
 
 </LinearLayout>
