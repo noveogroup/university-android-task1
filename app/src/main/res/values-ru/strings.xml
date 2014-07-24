@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Задача 1</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="enter_surname">Введите фамилию</string>
+    <string name="date_of_birth">Дата рождения:</string>
+    <string name="send">Отправить</string>
+    <string name="name">Имя:</string>
+    <string name="surname">Фамилия:</string>
+    <string name="age">Возраст:</string>
+    <string name="information">Имя:\n%1$s\nФамилия:\n%2$s\nВозраст:\n%3$s</string>
+</resources>

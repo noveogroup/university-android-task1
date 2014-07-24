@@ -1,3 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Task 1</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_surname">Enter surname</string>
+    <string name="date_of_birth">Date of birth:</string>
+    <string name="send">Send</string>
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="age">Age:</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="information">Name:\n%1$s\nSurname:\n%2$s\nAge:\n%3$s</string>
+
 </resources>
