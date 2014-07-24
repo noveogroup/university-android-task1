@@ -19,9 +19,6 @@ public class OutputActivity extends Activity {
         String age = intent.getStringExtra(InputActivity.EXTRA_AGE);
 
         TextView showInformation = (TextView)findViewById(R.id.show_information);
-        showInformation.setText(String.format("%s\n%s\n%s\n%s\n%s\n%s\n",
-                                              getString(R.string.name), name,
-                                              getString(R.string.surname), surname,
-                                              getString(R.string.age), age));
+        showInformation.setText(getString(R.string.information, name, surname, age));
     }
 }

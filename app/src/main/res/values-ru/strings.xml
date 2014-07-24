@@ -7,4 +7,5 @@
     <string name="name">Имя:</string>
     <string name="surname">Фамилия:</string>
     <string name="age">Возраст:</string>
+    <string name="information">Имя:\n%1$s\nФамилия:\n%2$s\nВозраст:\n%3$s</string>
 </resources>

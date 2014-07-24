@@ -27,7 +27,7 @@ public class InputFragment extends Fragment {
         super.onAttach(activity);
 
         if(!(activity instanceof OnSendListener)) {
-            throw new ClassCastException(activity.toString()
+            throw new RuntimeException(activity.toString()
                     + " must implement OnSendListener.");
         }
         onSendListener = (OnSendListener) activity;

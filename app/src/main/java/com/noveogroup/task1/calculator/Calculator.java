@@ -8,7 +8,10 @@ public final class Calculator {
     public static int calculateAge(final int year, final int month, final int dayOfMonth) {
         Calendar calendar = Calendar.getInstance();
         int age = calendar.get(Calendar.YEAR) - year - 1;
-        if(calendar.get(Calendar.MONTH) >= month
+        if(calendar.get(Calendar.MONTH) > month) {
+            ++age;
+        }
+        if(calendar.get(Calendar.MONTH) == month
            && calendar.get(Calendar.DAY_OF_MONTH) >= dayOfMonth) {
             ++age;
         }
