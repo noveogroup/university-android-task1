@@ -1,13 +1,13 @@
-<LinearLayout
+<FrameLayout
 	android:orientation="horizontal"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
 	xmlns:android="http://schemas.android.com/apk/res/android">
 
-	<fragment
-		android:layout_width="0dp"
+
+	<FrameLayout
+		android:id="@+id/fragment_container"
+		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_weight="1"
-		android:name="com.noveogroup.task1.ReadFragment"
-		android:id="@+id/read_fragment"/>
-</LinearLayout>
+		/>
+</FrameLayout>
