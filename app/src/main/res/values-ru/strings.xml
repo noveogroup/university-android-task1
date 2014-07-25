@@ -1,0 +1,13 @@
+<resources>
+
+	<string name="app_name">Task 1</string>
+	<string name="name_label">Имя</string>
+	<string name="birthdate_label">Дата рождения</string>
+	<string name="send_button_text">Отправить</string>
+	<string name="surname_label">Фамилия</string>
+	<string name="name_text">Имя: %1$s</string>
+	<string name="surname_text">Фамилия: %1$s</string>
+	<string name="age_text">Возраст: %1$d</string>
+	<string name="not_born">Ещё не рождён</string>
+
+</resources>

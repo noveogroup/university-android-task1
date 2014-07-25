@@ -1,3 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Task 1</string>
+
+	<string name="app_name">Task 1</string>
+	<string name="title_activity_read">Reader</string>
+	<string name="name_label">First Name</string>
+	<string name="surname_label">Last Name</string>
+	<string name="birthdate_label">Birth date</string>
+	<string name="send_button_text">Send</string>
+	<string name="title_activity_show">Info</string>
+	<string name="name_text">First Name: %1$s</string>
+	<string name="surname_text">Last Name: %1$s</string>
+	<string name="age_text">Age: %1$d</string>
+	<string name="not_born">Not born yet</string>
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="title_activity_start">Task 1</string>
 </resources>
