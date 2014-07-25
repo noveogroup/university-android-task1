@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.noveogroup.task1"
-        minSdkVersion 8
+        minSdkVersion 11
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
@@ -15,6 +15,14 @@ android {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        en {
+            applicationId "com.noveogroup.task1.en"
+        }
+        ru {
+            applicationId "com.noveogroup.task1.ru"
         }
     }
 }
