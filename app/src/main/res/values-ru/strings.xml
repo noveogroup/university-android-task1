@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android-task-1</string>
+    <string name="enter_first_name">Введите Ваше имя</string>
+    <string name="enter_last_name">Введите Вашу фамилию</string>
+    <string name="enter_birthday">Введите дату рождения</string>
+    <string name="default_first_name">Имя</string>
+    <string name="default_last_name">Фамилия</string>
+    <string name="showInform">Показать введенную информацию</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="age">Возраст</string>
+    <string name="action_settings">Настройки</string>
+
+</resources>
