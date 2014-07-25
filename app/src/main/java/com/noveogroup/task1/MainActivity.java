@@ -2,7 +2,6 @@ package com.noveogroup.task1;
 
 import android.app.Activity;
 import android.app.FragmentManager;
-import android.content.Intent;
 import android.os.Bundle;
 
 public class MainActivity extends Activity implements FragmentInput.OnClickButtonListener{
@@ -11,6 +10,10 @@ public class MainActivity extends Activity implements FragmentInput.OnClickButto
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        FragmentManager fm = getFragmentManager();
+        fm.beginTransaction()
+                .add(R.id.scrollView, new FragmentInput())
+                .commit();
     }
 
     @Override
@@ -19,13 +22,20 @@ public class MainActivity extends Activity implements FragmentInput.OnClickButto
         FragmentOutput fo = (FragmentOutput) fm.findFragmentById(R.id.frag_output);
 
         if(fo == null || !fo.isVisible()) {
-            Intent i = new Intent(MainActivity.this, SecondActivity.class);
-            i.putExtra(SecondActivity.EXTRA_FIRST_NAME, first);
-            i.putExtra(SecondActivity.EXTRA_LAST_NAME, last);
-            i.putExtra(SecondActivity.EXTRA_AGE, age);
-            startActivity(i);
+            Bundle bundle = new Bundle();
+            bundle.putString(FragmentOutput.EXTRA_NAME, first);
+            bundle.putString(FragmentOutput.EXTRA_SURNAME, last);
+            bundle.putInt(FragmentOutput.EXTRA_AGE, age);
+            fo = new FragmentOutput();
+            fo.setArguments(bundle);
+
+            fm.beginTransaction()
+                    .replace(R.id.scrollView, fo)
+                    .addToBackStack(null)
+                    .commit();
         }
-        else
-            fo.setData(first,last,age);
+        else {
+            fo.setData(first, last, age);
+        }
     }
 }

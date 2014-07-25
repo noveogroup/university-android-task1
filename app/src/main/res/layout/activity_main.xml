@@ -9,12 +9,6 @@
         android:layout_height="match_parent"
         android:id="@+id/scrollView" >
 
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="com.noveogroup.task1.FragmentInput"
-            android:id="@+id/frag_input"
-            tools:layout="@layout/fragment_input" />
     </ScrollView>
 
 </LinearLayout>
