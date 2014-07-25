@@ -47,7 +47,7 @@ public class Input extends Activity {
     private int calcAge(final DatePicker d) {
         Calendar c = Calendar.getInstance();
         int age = c.get(Calendar.YEAR) - d.getYear();
-        if(d.getMonth() < c.get(Calendar.MONTH)) {
+        if(d.getMonth() > c.get(Calendar.MONTH)) {
             age--;
         }
         else if(d.getMonth() == c.get(Calendar.MONTH) && d.getDayOfMonth() > c.get(Calendar.DAY_OF_MONTH)) {
